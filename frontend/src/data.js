@@ -7,7 +7,7 @@ const data = {
       image: '/images/p1.jpg',
       price: 120,
       brand: 'Nike',
-      rating: 4.5,
+      rating: 5,
       numReviews: 10,
       description: 'high quality product'
     },
@@ -30,7 +30,7 @@ const data = {
       image: '/images/p3.jpg',
       price: 220,
       brand: 'Lacoste',
-      rating: 4.8,
+      rating: 3.5,
       numReviews: 18,
       description: 'high quality product'
     },
