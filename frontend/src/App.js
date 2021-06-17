@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter } from 'react-router-dom';
-import data from "./data";
+import { BrowserRouter, Route } from 'react-router-dom';
 
-import Product from "./components/Product";
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from "./screens/ProductScreen";
 
 const App = () => {
   return (
@@ -21,14 +21,9 @@ const App = () => {
         </div>
       </header>
 
-      <Route path='/product/:id' component={ProductScree} />
-      <Route path='/' exact component={HomeScreen} />
       <main>
-        <div className="row center">
-          {data.products.map((product) => (
-            <Product key={product._id} product={product}/>
-          ))}
-        </div>
+        <Route path='/' exact component={HomeScreen} />
+        <Route path='/product/:id' component={ProductScreen} />
       </main>
 
       <footer className="row center">All rigth reserved.</footer>
