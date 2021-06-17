@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Rating from "../../components/Rating";
 import data from "../../data";
@@ -11,7 +12,9 @@ const ProductScreen = (props) => {
   }
 
   return (
-    <div className="row">
+    <>
+    <Link to="/" >Back to results</Link>
+    <div className="row top">
       <div className="col-2">
         <img className="large" src={product.image} alt={product.name} />
       </div>
@@ -66,6 +69,7 @@ const ProductScreen = (props) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

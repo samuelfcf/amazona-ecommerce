@@ -80,6 +80,9 @@ a.brand {
 .row.center {
   justify-content: center;
 }
+.row.top {
+  align-items: flex-start;
+}
 
 /* Image */
 img {
